@@ -22,7 +22,7 @@ function Hero() {
           </h1>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
             At <span className="font-semibold text-blue-600 dark:text-blue-400">Alpana Computers</span>,
-            we provide reliable and budget-friendly desktop PCs tailored for your home, office, or gaming needs.
+            we sell reliable and budget-friendly desktop PCs tailored for your home, office, or gaming needs.
           </p>
           <Link
             to="/about"
