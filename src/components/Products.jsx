@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 const products = [
   {
     id: 1,
@@ -18,11 +20,13 @@ const products = [
     name: "Alpana Server Pro",
     image: "/assets/product3.png",
     price: "₹13,499",
-    description: "Designed for creating home server. Intel i5, 16GB RAM, 128+128 GB SSD and 19 inch display.",
+    description: "Designed for home server. Intel i5, 16GB RAM, 128+128 GB SSD and 19 inch display.",
   },
 ];
 
 function Products() {
+  const navigate = useNavigate();
+
   return (
     <section className="py-16 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white px-6">
       <div className="max-w-6xl mx-auto text-center mb-12">
@@ -47,7 +51,10 @@ function Products() {
               <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-2">{product.description}</p>
               <p className="font-bold text-blue-600 dark:text-blue-400">{product.price}</p>
-              <button className="mt-4 w-full bg-blue-600 dark:bg-blue-500 text-white py-2 rounded hover:opacity-90 transition">
+              <button
+                className="mt-4 w-full bg-blue-600 dark:bg-blue-500 text-white py-2 rounded hover:opacity-90 transition"
+                onClick={() => navigate("/contact")}
+              >
                 View Details
               </button>
             </div>
