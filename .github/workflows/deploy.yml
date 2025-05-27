@@ -3,7 +3,7 @@ name: Deploy to S3
 on:
   push:
     branches:
-      - master  # ← now triggered on master branch push
+      - master
 
 jobs:
   deploy:
@@ -14,13 +14,21 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v3
 
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build React App
         run: npm run build
