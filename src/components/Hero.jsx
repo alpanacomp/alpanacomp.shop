@@ -18,7 +18,7 @@ function Hero() {
         {/* Text Section */}
         <div className="flex-1">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Affordable & Quality Desktops
+            Affordable & Quality Desktops is here.
           </h1>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
             At <span className="font-semibold text-blue-600 dark:text-blue-400">Alpana Computers</span>,
