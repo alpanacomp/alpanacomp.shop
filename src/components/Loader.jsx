@@ -8,7 +8,7 @@ function Loader() {
         autoplay
         loop
         src={loaderAnimation}
-        style={{ height: "320px", width: "320px" }}
+        style={{ height: "420px", width: "420px" }}
       />
     </div>
   );
