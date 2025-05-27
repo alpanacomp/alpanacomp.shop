@@ -15,8 +15,15 @@ function Contact() {
         {/* Contact Details */}
         <div className="mb-10 text-center">
           <p className="text-lg font-semibold">Alpana Computers</p>
-          <p className="text-gray-700 dark:text-gray-300">Phone: <a href="tel:+918250902187" className="text-blue-600 dark:text-blue-400 hover:underline">+91 82509 02187</a></p>
-          <p className="text-gray-700 dark:text-gray-300">Email: <a href="mailto:alpanacomp1969@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">alpanacomp1969@gmail.com</a></p>
+          <p className="text-gray-700 dark:text-gray-300">
+            Phone: <a href="tel:+918250902187" className="text-blue-600 dark:text-blue-400 hover:underline">+91 82509 02187</a>
+          </p>
+          <p className="text-gray-700 dark:text-gray-300">
+            Email: <a href="mailto:alpanacomp1969@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">alpanacomp1969@gmail.com</a>
+          </p>
+          <p className="text-gray-700 dark:text-gray-300 mt-2">
+            Address: <span className="text-blue-600 dark:text-blue-400">Champahati, Chinagram(Talbari), West Bengal, Pin: 743330 </span>
+          </p>
         </div>
 
         {/* Contact Form */}
