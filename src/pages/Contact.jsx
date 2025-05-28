@@ -1,67 +1,101 @@
 import React from "react";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 function Contact() {
   return (
-    <section className="py-20 px-6 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
-      <div className="max-w-4xl mx-auto">
-        {/* Page Title */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-          Contact Us
-        </h2>
-        <p className="mb-10 text-center text-gray-600 dark:text-gray-300">
-          Have questions or need help? Reach out to us directly or use the form below.
-        </p>
+    <section className="text-gray-900 dark:text-white">
+      {/* Hero Section with Background Image */}
+      <div
+        className="relative bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url("/assets/contact-hero-bg.png")` }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
 
-        {/* Contact Details */}
-        <div className="mb-10 text-center">
-          <p className="text-lg font-semibold">Alpana Computers</p>
-          <p className="text-gray-700 dark:text-gray-300">
-            Phone: <a href="tel:+918250902187" className="text-blue-600 dark:text-blue-400 hover:underline">+91 82509 02187</a>
-          </p>
-          <p className="text-gray-700 dark:text-gray-300">
-            Email: <a href="mailto:alpanacomp1969@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">alpanacomp1969@gmail.com</a>
-          </p>
-          <p className="text-gray-700 dark:text-gray-300 mt-2">
-            Address: <span className="text-blue-600 dark:text-blue-400">Champahati, Chinagram(Talbari), West Bengal, Pin: 743330 </span>
-          </p>
+        <div className="relative z-10 py-20 px-6">
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 text-center md:text-left">
+            {/* Text */}
+            <div className="flex-1">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Get in Touch</h1>
+              <p className="text-lg text-gray-200 mb-6">
+                Whether you're curious about setups, pricing, or support — we're ready to answer any and all questions.
+              </p>
+            </div>
+
+            {/* Lottie Animation */}
+            <div className="flex-1 flex justify-center">
+              <Player
+                autoplay
+                loop
+                src="/assets/lottie/contact.json"
+                className="w-64 h-64"
+              />
+            </div>
+          </div>
         </div>
+      </div>
 
-        {/* Contact Form */}
-        <form className="grid gap-6 bg-white dark:bg-gray-800 p-8 rounded-lg shadow">
-          <div>
-            <label className="block mb-1 font-medium">Name</label>
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
+      {/* Contact Content Section */}
+      <div className="py-20 px-6 bg-gray-50 dark:bg-gray-900">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+            Contact Us
+          </h2>
+          <p className="mb-10 text-center text-gray-600 dark:text-gray-300">
+            Have questions or need help? Reach out to us directly or use the form below.
+          </p>
+
+          {/* Contact Details */}
+          <div className="mb-10 text-center">
+            <p className="text-lg font-semibold">Alpana Computers</p>
+            <p className="text-gray-700 dark:text-gray-300">
+              Phone: <a href="tel:+918250902187" className="text-blue-600 dark:text-blue-400 hover:underline">+91 82509 02187</a>
+            </p>
+            <p className="text-gray-700 dark:text-gray-300">
+              Email: <a href="mailto:alpanacomp1969@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">alpanacomp1969@gmail.com</a>
+            </p>
+            <p className="text-gray-700 dark:text-gray-300 mt-2">
+              Address: <span className="text-blue-600 dark:text-blue-400">Champahati, Chinagram (Talbari), West Bengal, Pin: 743330</span>
+            </p>
           </div>
 
-          <div>
-            <label className="block mb-1 font-medium">Email</label>
-            <input
-              type="email"
-              placeholder="you@example.com"
-              className="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
+          {/* Contact Form */}
+          <form className="grid gap-6 bg-white dark:bg-gray-800 p-8 rounded-lg shadow">
+            <div>
+              <label className="block mb-1 font-medium">Name</label>
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
 
-          <div>
-            <label className="block mb-1 font-medium">Message</label>
-            <textarea
-              rows="5"
-              placeholder="Your message..."
-              className="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
+            <div>
+              <label className="block mb-1 font-medium">Email</label>
+              <input
+                type="email"
+                placeholder="you@example.com"
+                className="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
 
-          <button
-            type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 text-white font-semibold py-3 rounded-lg transition"
-          >
-            Send Message
-          </button>
-        </form>
+            <div>
+              <label className="block mb-1 font-medium">Message</label>
+              <textarea
+                rows="5"
+                placeholder="Your message..."
+                className="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 text-white font-semibold py-3 rounded-lg transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   );
