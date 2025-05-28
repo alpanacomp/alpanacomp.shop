@@ -25,7 +25,7 @@ const features = [
 
 function WhyChoose() {
   return (
-    <section className="py-16 bg-white dark:bg-gray-800 text-center px-6 text-gray-800 dark:text-white">
+    <section className="py-16 bg-white dark:bg-gray-800 text-center px-6 text-gray-800 dark:text-white" data-aos="fade-left">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Why Choose <span className="text-blue-600 dark:text-blue-400">Alpana Computers?</span>

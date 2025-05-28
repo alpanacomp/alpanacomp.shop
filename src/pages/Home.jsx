@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import Products from "../components/Products";
 import WhyChoose from "../components/WhyChoose";
 import Services from "../components/Services";
+import People from "../components/People"; // 👈 import it
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <Products />
       <WhyChoose />
       <Services />
+      <People /> {/* 👈 add here */}
     </>
   );
 }

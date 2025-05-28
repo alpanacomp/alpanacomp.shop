@@ -6,12 +6,22 @@ import AppRoutes from "./routes/AppRoutes";
 import { ThemeProvider } from "./context/ThemeContext";
 import Loader from "./components/Loader";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1200); // adjust delay if needed
+    const timer = setTimeout(() => setLoading(false), 1200);
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
   }, []);
 
   return (
