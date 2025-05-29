@@ -13,7 +13,7 @@ function Footer() {
         <div className="space-y-1">
           <p className="font-semibold text-base">Alpana Computers</p>
           <p>Phone: <a href="tel:+918250902187" className="text-blue-600 dark:text-blue-400 hover:underline">+91 82509 02187</a></p>
-          <p>Email: <a href="mailto:alpanacomp1969@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">alpanacomp1969@gmail.com</a></p>
+          <p>Email: <a href="mailto:alpanacomp1969@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">alpanacomp@alpanacomp.shop</a></p>
           <p>Address: <span className="text-blue-600 dark:text-blue-400">Champahati, Chinagram (Talbari), West Bengal, Pin: 743330</span></p>
         </div>
 

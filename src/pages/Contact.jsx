@@ -4,17 +4,15 @@ import { Player } from "@lottiefiles/react-lottie-player";
 function Contact() {
   return (
     <section className="text-gray-900 dark:text-white">
-      {/* Hero Section with Background Image */}
+      {/* Hero Section */}
       <div
         className="relative bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url("/assets/contact-hero-bg-04.png")` }}
       >
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
 
         <div className="relative z-10 py-20 px-6">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 text-center md:text-left">
-            {/* Text */}
             <div className="flex-1">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
                 Get in Touch
@@ -23,8 +21,6 @@ function Contact() {
                 Whether you're curious about setups, pricing, or support — we're ready to answer any and all questions.
               </p>
             </div>
-
-            {/* Lottie Animation */}
             <div className="flex-1 flex justify-center">
               <Player
                 autoplay
@@ -37,7 +33,7 @@ function Contact() {
         </div>
       </div>
 
-      {/* Contact Content Section */}
+      {/* Contact Section */}
       <div className="py-20 px-6 bg-gray-50 dark:bg-gray-900" data-aos="fade-right">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
@@ -47,7 +43,6 @@ function Contact() {
             Have questions or need help? Reach out to us directly or use the form below.
           </p>
 
-          {/* Inline Layout */}
           <div className="grid md:grid-cols-2 gap-10 items-start">
             {/* Contact Info */}
             <div className="space-y-1 text-gray-700 dark:text-gray-300" data-aos="fade-right">
@@ -60,8 +55,8 @@ function Contact() {
               </p>
               <p>
                 Email:{" "}
-                <a href="mailto:alpanacomp1969@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">
-                  alpanacomp1969@gmail.com
+                <a href="mailto:alpanacomp@alpanacomp.shop" className="text-blue-600 dark:text-blue-400 hover:underline">
+                  alpanacomp@alpanacomp.shop
                 </a>
               </p>
               <p>
@@ -88,7 +83,13 @@ function Contact() {
             </div>
 
             {/* Contact Form */}
-            <form className="grid gap-6 bg-white dark:bg-gray-800 p-8 rounded-lg shadow" data-aos="fade-left">
+            <form
+              action="https://formspree.io/f/mjkwnzdb"
+              method="POST"
+              className="grid gap-6 bg-white dark:bg-gray-800 p-8 rounded-lg shadow"
+              data-aos="fade-left"
+            >
+              {/* Optional name input – visible to user but not sent to Formspree */}
               <div>
                 <label className="block mb-1 font-medium">Name</label>
                 <input
@@ -102,6 +103,8 @@ function Contact() {
                 <label className="block mb-1 font-medium">Email</label>
                 <input
                   type="email"
+                  name="email"
+                  required
                   placeholder="you@example.com"
                   className="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
@@ -110,6 +113,8 @@ function Contact() {
               <div>
                 <label className="block mb-1 font-medium">Message</label>
                 <textarea
+                  name="message"
+                  required
                   rows="5"
                   placeholder="Your message..."
                   className="w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"

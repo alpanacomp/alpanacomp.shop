@@ -26,9 +26,11 @@ function Navbar() {
   return (
     <nav className={`${navbarClasses} px-6 py-3 flex justify-between items-center`}>
       {/* Logo + Brand */}
-      <div className="flex items-center gap-2">
-        <img src="/logo.png" alt="Logo" className="w-8 h-8" />
-      </div>
+      <Link to="/">
+        <div className="flex items-center gap-2">
+          <img src="/logo.png" alt="Logo" className="w-8 h-8" />
+        </div>
+      </Link>
 
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center gap-6">
