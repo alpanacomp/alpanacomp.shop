@@ -4,10 +4,10 @@ import { FaStar } from "react-icons/fa";
 
 const reviews = [
   {
-    name: "Rohit Das",
+    name: "Somasree Naskar",
     rating: 5,
-    comment: "Very helpful service. Quick resolution of my laptop issue.",
-    date: "May 2024"
+    comment: "Very helpful service. The system quality is good.",
+    date: "Mar 2025"
   },
   {
     name: "Priya Mukherjee",
